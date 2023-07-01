@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "795684476915",
+    "project_id": "bhdelnii",
+    "storage_bucket": "bhdelnii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795684476915:android:6e3360981c7b25fa55e486",
+        "android_client_info": {
+          "package_name": "com.example.bhdelni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795684476915-akk1s6bkjjkklj40s53kuebf4p54h83i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp-9tevAo303NNEHJaMYyLepJD5UG3hQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795684476915-akk1s6bkjjkklj40s53kuebf4p54h83i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "795684476915-eglke4g7964likjvj6092b8pqdml9mu4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bhdelni.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
