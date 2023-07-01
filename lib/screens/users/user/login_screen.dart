@@ -95,7 +95,7 @@ class LoginScreen extends StatelessWidget {
                                         borderRadius: BorderRadius.circular(20),
                                       ),
                                       child: const Text(
-                                        'Sing-In',
+                                        'Sign-In',
                                         style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 20,
@@ -126,7 +126,6 @@ class LoginScreen extends StatelessWidget {
 }
 
 
-d
 
 class MyBehavior extends ScrollBehavior {
   @override
