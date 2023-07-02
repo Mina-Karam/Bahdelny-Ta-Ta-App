@@ -1,6 +1,7 @@
 
 
 import 'package:bhdelni/cubit/user/user_states.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../data/firebase/firebase_reposatory.dart';
@@ -12,6 +13,8 @@ class UserCubit extends Cubit<UserStates> {
 
   Map<String, dynamic>? user;
 
+  IconData suffix = Icons.visibility_outlined;
+  bool isPassword = true;
 
   bool obscurePassFlag = true;
 
@@ -43,4 +46,11 @@ class UserCubit extends Cubit<UserStates> {
     emit(ChangeObscureConfirmFlagUserState());
   }
 
+  void changePasswordVisibility() {
+    isPassword = !isPassword;
+    suffix =
+    isPassword ? Icons.visibility_outlined : Icons.visibility_off_outlined;
+
+    emit(ChangePasswordVisibilityState());
+  }
 }
