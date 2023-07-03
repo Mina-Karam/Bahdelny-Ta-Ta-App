@@ -28,26 +28,7 @@ class ChangeObscureConfirmFlagUserState extends UserStates {}
 
 class LogOutSuccessUserState extends UserStates {}
 
-//coupon States
+class ChangePasswordVisibilityState extends UserStates {}
 
-class CreateCouponLoadingState extends UserStates {}
 
-class CreateCouponSuccessState extends UserStates {}
 
-class CreateCouponErrorState extends UserStates {
-  final String error;
-
-  CreateCouponErrorState(this.error);
-}
-
-//get coupons States
-
-class GetCouponLoadingState extends UserStates {}
-
-class GetCouponSuccessState extends UserStates {}
-
-class GetCouponErrorState extends UserStates {
-  final String error;
-
-  GetCouponErrorState(this.error);
-}
