@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -9,6 +10,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 import '../../../cubit/user/user_cubit.dart';
 import '../../../cubit/user/user_states.dart';
 import '../../../data/local/cache_helper.dart';
+import '../../../widgets/global/default_button.dart';
+import '../../../widgets/global/default_text_field.dart';
 import '../../../widgets/global/toast.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -91,19 +94,21 @@ class LoginScreen extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                          component(
-                                            context,
-                                            Icons.email_outlined,
+                                         component(
+                                           context,
+                                           Icons.lock_outline,
                                             'Email...',
-                                            false,
-                                            true,
-                                          ),
+                                      false,
+                                      true,
+                                           (String? value){}
+                                         ),
                                           component(
                                             context,
                                             Icons.lock_outline,
                                             'Password...',
                                             true,
                                             false,
+                                              (String? value){}
                                           ),
                                           SizedBox(height: size.width * .3),
                                           InkWell(
@@ -126,16 +131,17 @@ class LoginScreen extends StatelessWidget {
                                                 color: Colors.black.withOpacity(.1),
                                                 borderRadius: BorderRadius.circular(20),
                                               ),
-                                              child: const Text(
-                                                ' Login ',
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 20,
-                                                  fontWeight: FontWeight.w600,
+                                              child:  ConditionalBuilder(
+                                                condition: state is! GetUserLoadingState,
+                                                fallback: (context) => Center(child: CircularProgressIndicator()),
+                                                builder:(context)=> defaultButton(
+                                                  text:'Login',
+                                                  onTap: () {  },
+                                                  width: width,
+                                                ),
                                                 ),
                                               ),
                                             ),
-                                          ),
                                         ],
                                       ),
                                     ),
@@ -181,6 +187,7 @@ Widget component( context,
     String hintText,
     bool isPassword,
     bool isEmail,
+    validate,
 
     ) {
     Size size = MediaQuery.of(context).size;
@@ -193,7 +200,8 @@ Widget component( context,
         color: Colors.black.withOpacity(.1),
         borderRadius: BorderRadius.circular(20),
       ),
-      child: TextField(
+      child: TextFormField(
+        validator: validate,
         style: TextStyle(
           color: Colors.white.withOpacity(.9),
         ),
@@ -210,6 +218,7 @@ Widget component( context,
           hintStyle: TextStyle(
             fontSize: 14,
             color: Colors.white.withOpacity(.5),
+
           ),
         ),
       ),

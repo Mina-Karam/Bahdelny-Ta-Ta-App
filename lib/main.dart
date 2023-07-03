@@ -1,3 +1,4 @@
+import 'package:bhdelni/constants/colors.dart';
 import 'package:bhdelni/screens/splash_screen.dart';
 import 'package:bhdelni/screens/users/user/login_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: ConstColors.darkYellow,
       ),
       home: LoginScreen(),
     );

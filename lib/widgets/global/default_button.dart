@@ -1,3 +1,4 @@
+import 'package:bhdelni/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -13,7 +14,7 @@ Widget defaultButton({
           height: 55,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: const Color.fromRGBO(26, 188, 0, 1),
+            color:ConstColors.darkYellow,
             borderRadius: BorderRadius.circular(5),
           ),
           child: Padding(
