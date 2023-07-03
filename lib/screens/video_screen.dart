@@ -24,7 +24,7 @@ class VideoScreen extends StatelessWidget {
                   width: 10.0,
                 ),
                 Text(
-                  'David Ashraf',
+                  'kirolles faie',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     fontSize: 15.0,
