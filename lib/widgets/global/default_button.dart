@@ -14,14 +14,14 @@ Widget defaultButton({
           height: 55,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color:ConstColors.darkYellow,
+            color:ConstColors.coffee,
             borderRadius: BorderRadius.circular(5),
           ),
           child: Padding(
             padding: const EdgeInsets.all(15.0),
             child: Text(
               text,
-              style: GoogleFonts.roboto(
+              style: GoogleFonts.montserrat(
                   fontSize: 16, color: const Color.fromRGBO(255, 255, 255, 1)),
             ),
           )));

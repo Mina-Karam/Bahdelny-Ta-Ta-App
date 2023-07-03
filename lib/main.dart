@@ -1,7 +1,10 @@
 import 'package:bhdelni/constants/colors.dart';
+import 'package:bhdelni/screens/regisation_screen.dart';
 import 'package:bhdelni/screens/splash_screen.dart';
 import 'package:bhdelni/screens/users/user/login_screen.dart';
+import 'package:bhdelni/screens/video_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'constants/conestant.dart';
 import 'data/firebase/firebase_reposatory.dart';
@@ -13,11 +16,10 @@ void main() async{
   await CacheHelper.init();
   constUid = CacheHelper.getData(key: 'user');
 
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: ConstColors.darkYellow,
       ),
-      home: LoginScreen(),
+      home: Registration(),
     );
   }
 }

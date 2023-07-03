@@ -13,17 +13,17 @@ Widget registrationText({
           border: Border(
               bottom: BorderSide(
                   color: isClick
-                      ? const Color.fromRGBO(26, 188, 0, 1)
-                      : const Color.fromRGBO(0, 0, 0, 0),
+                      ? const Color.fromRGBO(153, 102, 51, 1.0)
+                      : const Color.fromRGBO(153, 102, 51, 1.0),
                   width: 3))),
       child: Padding(
         padding: const EdgeInsets.only(bottom: 10.0),
         child: Text(
           text,
-          style: GoogleFonts.roboto(
+          style: GoogleFonts.montserrat(
               color: isClick
-                  ? const Color.fromRGBO(26, 188, 0, 1)
-                  : const Color.fromRGBO(138, 138, 138, 1),
+                  ? const Color.fromRGBO(153, 102, 51, 1.0)
+                  : const Color.fromRGBO(153, 102, 51, 1.0),
               fontSize: 18),
         ),
       ),

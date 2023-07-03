@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Widget defaultText({
   required String text,
@@ -10,7 +11,7 @@ Widget defaultText({
     style: TextStyle(
       fontSize: size,
       fontWeight: FontWeight.bold,
-      fontFamily: 'Cairo',
+      fontFamily: 'Montserrat',
       color: color,
     ),
   );
