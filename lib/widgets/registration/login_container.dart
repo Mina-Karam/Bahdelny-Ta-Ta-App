@@ -42,13 +42,13 @@ Widget loginContainer({
                 return null;
               }),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 30,
+            height: MediaQuery.of(context).size.height / 20,
           ),
           ConditionalBuilder(
             condition: (!flag),
             builder: (BuildContext context) => defaultButton(
                 width: MediaQuery.of(context).size.width,
-                text: "Login",
+                text: "LOGIN",
                 onTap: onTap),
             fallback: (BuildContext context) => const Center(
               child: CircularProgressIndicator(),

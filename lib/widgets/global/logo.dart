@@ -3,11 +3,13 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../../constants/colors.dart';
 
-Widget logo({required double size}) {
+Widget logo({
+  required double width,
+  required double height,
+}) {
   return SvgPicture.asset(
-    "assets/image/logo.svg",
-    color: ConstColors.green,
-    width: size,
-    height: size,
+    "assets/image/behdlny12.svg",
+    width: width,
+    height: height,
   );
 }
