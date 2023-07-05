@@ -34,14 +34,6 @@ class VideoScreen extends StatelessWidget {
             ),
 
       ),
-      body: ,
     );
   }
 }
-
-
-
-
-
-
-

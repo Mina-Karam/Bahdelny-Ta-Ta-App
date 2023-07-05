@@ -18,7 +18,6 @@ class ConstColors {
     700: Color(0x00ce982b),
     800: Color(0x00ce982b),
     900: Color(0x00ce982b),
-
   });
 
 
