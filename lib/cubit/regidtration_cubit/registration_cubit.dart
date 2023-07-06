@@ -18,7 +18,7 @@ class RegistrationCubit extends Cubit<RegistrationState> {
     this.registrationFlag = registrationFlag;
     emit(ChangeRegistration());
   }
-
+void main(){}
   signUp({
     required firstName,
     required lastName,

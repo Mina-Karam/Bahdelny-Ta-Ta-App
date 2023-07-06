@@ -3,25 +3,25 @@
   <defs>
     <style>
       .cls-1, .cls-2 {
-      fill: #ce982b;
+        fill: #ce982b;
       }
 
       .cls-3 {
-      fill: url(#linear-gradient);
+        fill: url(#linear-gradient);
       }
 
       .cls-4 {
-      fill: #664219;
+        fill: #664219;
       }
 
       .cls-5 {
-      fill: #a6772b;
+        fill: #a6772b;
       }
 
       .cls-2 {
-      font-family: Montserrat-Bold, Montserrat;
-      font-size: 10.78px;
-      font-weight: 700;
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 10.78px;
+        font-weight: 700;
       }
     </style>
     <linearGradient id="linear-gradient" x1="324.09" y1="274.32" x2="701.28" y2="274.32" gradientUnits="userSpaceOnUse">

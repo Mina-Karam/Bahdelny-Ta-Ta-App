@@ -5,10 +5,11 @@ import '../../../constants/colors.dart';
 
 Widget logo({
   required double width,
-  required double height,
+  required double height
 }) {
   return SvgPicture.asset(
-    "assets/image/behdlny12.svg",
+    "assets/image/logo.svg",
+    color: ConstColors.green,
     width: width,
     height: height,
   );
